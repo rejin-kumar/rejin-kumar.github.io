@@ -1,18 +1,38 @@
 body
 {
-	font-family:"Segoe UI";
+	font-family:'Open Sans', sans-serif;
 	color:#000;
-	text-align:justify;
 }
 
 .headerImage
 {
-	background:url(../images/NewPortfolio.jpg);
+	background:url(../images/portfolio-bg.jpg);
 	background-size:100% auto;
 	background-repeat:no-repeat;
 	background-color:#fff;
 	margin:0px;
-	padding-bottom:48%;
+}
+
+.headerImage h1 {
+	font-family: 'Lobster';
+	font-size: 45px;
+	text-align: center;
+	padding-top: 140px;
+}
+
+.headerImage h2 {
+	text-align: center;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-size: 15px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    border-top: 1px solid;
+    padding-top: 20px;
+    line-height: 30px;
 }
 
 .interest
@@ -29,30 +49,9 @@ body
 {
 	padding-top:5%;
 }
-.timeline
-{
-	border-left: solid 1px #000000;
-}
 
-.projects
-{
-	border-right: solid 1px #000000;
-}
-
-.timelinedotright
-{
-	background-image:url(../images/timelinedotright.png);
-	background-position:top left;
-	background-repeat:no-repeat;
-	background-size:60px;
-}
-
-.timelinedotleft
-{
-	background-image:url(../images/timelinedotleft.png);
-	background-position:top right;
-	background-repeat:no-repeat;
-	background-size:60px;
+.section {
+	margin-top: 50px;
 }
 
 .container-fluid
@@ -61,7 +60,7 @@ body
 }
 .heading
 {
-	font-family:"Lobster 1.3";
+	font-family:"Lobster";
 	font-size:200%;
 	color:#000;
 }
@@ -88,30 +87,90 @@ body
 	background-color: #000;
 }
 
-@media only screen and (max-width: 600px) {
-	.container-fluid{
-		margin:0;
+.timeline
+{
+	border-left: 0;
+}
+.timelinedotright
+{
+	background-image:none;
+}
+
+.timelinedotleft
+{
+	background-image:none;
+}
+
+.event-title {
+	padding-left: 25px;
+}
+
+.projects
+{
+	padding-bottom: 30px;
+}
+
+footer{
+	padding-bottom: 40px;
+}
+
+.spacing-bottom {
+	padding-bottom: 40px;
+}
+
+.spacing-top {
+	padding-top: 40px;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.headerImage h1 {
+		font-size: 72px;
+		padding-top: 270px;
 	}
-	.xs-spacing-top{
-		padding-top:20px;
+
+	.headerImage h2 {
+		letter-spacing: 5px;
+    	font-size: 20px;
 	}
-	.xs-padding-none{
-		padding:0;
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.headerImage h1 {
+		padding-top: 450px;
 	}
-		
-    .timeline {
-        border-left:none;
-    }
-	.timelinedotright{
-		background-image:none;
+
+	.timeline
+	{
+		border-left: solid 1px #000000;
 	}
-	.timelinedotleft{
-		background-image:none;
+
+	.timelinedotright
+	{
+		background-image:url(../images/timelinedotright.png);
+		background-position:top left;
+		background-repeat:no-repeat;
+		background-size:60px;
+		padding-bottom: 30px;
 	}
+
+	.timelinedotleft
+	{
+		background-image:url(../images/timelinedotleft.png);
+		background-position:top right;
+		background-repeat:no-repeat;
+		background-size:60px;
+	}
+
 	.projects{
-		border-right:none;
+		border-right: solid 1px #000000;
 	}
-	footer{
-		padding-bottom: 40px;
-	}
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
