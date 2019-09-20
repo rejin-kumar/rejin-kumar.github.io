@@ -139,7 +139,7 @@ footer{
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 	.headerImage h1 {
-		padding-top: 450px;
+		padding-top: 580px;
 	}
 
 	.timeline
